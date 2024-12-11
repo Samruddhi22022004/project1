@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Enrollment Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #b2d7fc;
+        }
+        .form-container {
+            background-color: #9deff5;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-label {
+            font-weight: 600;
+        }
+        .form-control {
+            border-radius: 4px;
+            padding: 10px;
+        }
+        .btn-warning {
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-size: 16px;
+        }
+        .btn-warning:hover {
+            background-color: #f0ad4e;
+        }
+        .form-check-label {
+            margin-left: 10px;
+        }
+        .mb-3 {
+            margin-bottom: 1.5rem !important;
+        }
+        .course-checkboxes label {
+            display: block;
+            padding: 5px 0;
+        }
+        .course-checkboxes input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="bg-faintblue">
+
+    <div class="container mt-5">
+        <div class="form-container">
+            <h2 class="text-center mb-4">Enrollment Registration</h2>
+            <form action="thank_you.html" method="get">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" pattern="[0-9]{10}" required>
+                    <small class="form-text text-muted">Enter a valid 10-digit phone number.</small>
+                </div>
+
+                <div class="mb-3">
+                    <label for="education" class="form-label">Education Level</label>
+                    <input type="text" class="form-control" id="education" placeholder="Enter your education level (e.g., SSC, Graduate)" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="maritalStatus" class="form-label">Marital Status</label>
+                    <select class="form-select" id="maritalStatus" required>
+                        <option value="" disabled selected>Select your marital status</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 course-checkboxes">
+                    <label for="courses" class="form-label">Select Courses</label>
+                    <div>
+                        <label><input type="checkbox" name="courses" value="c_programming"> C Programming</label>
+                        <label><input type="checkbox" name="courses" value="c_plus_plus"> C++</label>
+                        <label><input type="checkbox" name="courses" value="ms_office"> MS Office</label>
+                        <label><input type="checkbox" name="courses" value="typing"> Typing</label>
+                        <label><input type="checkbox" name="courses" value="java"> Java</label>
+                        <label><input type="checkbox" name="courses" value="python"> Python</label>
+                        <label><input type="checkbox" name="courses" value="web_development"> Web Development</label>
+                        <label><input type="checkbox" name="courses" value="data_structures"> Data Structures and Algorithms</label>
+                        <label><input type="checkbox" name="courses" value="software_testing"> Software Testing</label>
+                        <label><input type="checkbox" name="courses" value="mysql"> MySQL</label>
+                        <label><input type="checkbox" name="courses" value="microsoft_net"> Microsoft .NET</label>
+                        <label><input type="checkbox" name="courses" value="power_bi"> Power BI</label>
+                        <label><input type="checkbox" name="courses" value="advance_excel"> Advanced Excel</label>
+                        <label><input type="checkbox" name="courses" value="ui_ux_design"> UI/UX Design</label>
+                        <label><input type="checkbox" name="courses" value="coral_draw"> Coral Draw</label>
+                        <label><input type="checkbox" name="courses" value="dtp"> DTP (Desktop Publishing)</label>
+                        <label><input type="checkbox" name="courses" value="photoshop"> Photoshop</label>
+                        <label><input type="checkbox" name="courses" value="php"> PHP</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-warning w-100">Register</button>
+                <a href="courses.html" class="btn btn-light mt-3 w-100">Back to Courses</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
